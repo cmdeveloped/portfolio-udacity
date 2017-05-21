@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Lobster|Raleway:300,400,500,700');
+$primary: #37474f;
+$secondary: #62717b;
+$accent: #ffe082;
+$pacifico: 'Pacifico', cursive;
+$raleway: 'Raleway', sans-serif;
+$lobster: 'Lobster', cursive;
+
+html {
+  max-width: 100%;
+  font-family: $raleway;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+// Header styling
+.header.right {
+  text-align: center;
+  margin-right: 50px;
+}
+
+header {
+  overflow: auto;
+  color: $primary;
+  padding-bottom: 12px;
+  border-bottom: 7px solid $accent;
+
+  #logo, #name {
+    margin-top: 0;
+  }
+
+  #logo {
+    text-align: center;
+    margin: 32px 0 0 50px;
+    font-size: 35px;
+    font-family: $pacifico;
+    float: left;
+  }
+
+  #name {
+    font-size: 50px;
+    margin-bottom: 7px;
+  }
+
+  #name, h3, h4 {
+    clear: right;
+    float: right;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h3, h4 {
+    margin: 5px;
+  }
+}
+
+// Main content
+.main {
+  display: inline-block;
+  width: 100%;
+}
+
+// Welcome Content
+.welcome {
+  img {
+    border-radius: 100%;
+    border: 4px inset $secondary;
+  }
+  h1 {
+    margin-bottom: 55px;
+  }
+}
+
+// Color Palette
+.main.left {
+  height: 50%;
+  margin: 50px 0 0 0;
+  width: 25%;
+  height: 400px;
+  h2 {
+    color: $primary;
+  }
+  ul {
+    margin-top: 15px;
+    li {
+      margin-bottom: 15px;
+      height: 75px;
+      display: block;
+      figure {
+        margin: 0;
+        float: left;
+        height: 75px;
+        width: 75px;
+        clear: left;
+      }
+      figcaption {
+        float: left;
+        height: 75px;
+        padding: 25px 0 0 15px;
+      }
+    }
+  }
+}
+
+#palette_head {
+  font-family: $pacifico;
+}
+
+#primary {
+  background-color: $primary;
+}
+#secondary {
+  background-color: $secondary;
+}
+#accent {
+  background-color: $accent;
+}
+
+// Carousel Override Styles
+#myCarousel {
+  margin-top: 20px;
+  float: right;
+  width: 75%;
+  height: 50%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $accent;
+}
+
+.carousel-inner {
+  height: inherit;
+}
+
+// Portfolio
+.portfolio {
+  h1 {
+    padding: 45px 0 20px 0;
+    font-size: 35px;
+    color: $primary;
+  }
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 50px;
+      img {
+        height: 150px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        padding: 0;
+      }
+      h5 {
+        font-family: $pacifico;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+// Media Query 1
+@media screen and (max-width: 1300px) and (min-width: 966px) {
+  .main {
+    display: inline-block;
+  }
+
+  .main.left {
+    width: 100%;
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 35px;
+      }
+    }
+  }
+
+  #myCarousel {
+    width: 100%;
+    float: none;
+  }
+}
+
+// Media Query 2
+@media screen and (max-width: 965px) and (min-width: 729px) {
+  .main.left {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    .welcome {
+      margin-top: 50px;
+      width: 50%;
+    }
+    .content-wrapper {
+      width: 50%;
+    }
+    ul{
+      li{
+        display: block;
+        width: 100%;
+        margin: 25px auto;
+      }
+    }
+  }
+
+  #myCarousel {
+    width: 100%;
+  }
+
+  .portfolio{
+    ul {
+      padding: 0;
+      li {
+        width: 300px;
+        margin: 25px auto;
+      }
+    }
+  }
+}
+
+// Media Query 3
+@media screen and (max-width: 728px) {
+  html {
+    margin: 20px 20px;
+  }
+
+  .header.right {
+    margin: 3px auto;
+  }
+
+  header {
+    #logo {
+      width: 100%;
+      float: none;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    #name {
+      width: 100%;
+      margin: 20px 0 10px 0;
+    }
+
+    h3 {
+      width: 100%;
+      margin: 20px 0 0 0;
+      font-size: 20px;
+    }
+
+    h4 {
+      width: 100%;
+      margin: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .main.left {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+
+    .welcome {
+      height: auto;
+      width: 50%;
+      img {
+        margin: 20px 0 0 0;
+        width: 140px;
+      }
+    }
+
+    .content-wrapper {
+      width: 100%;
+    }
+    ul{
+      li{
+        display: block;
+        width: 100%;
+        margin: 25px auto;
+      }
+    }
+  }
+
+  #myCarousel {
+    width: 100%;
+    height: 35%;
+  }
+
+  .portfolio{
+    ul {
+      padding: 0;
+      li {
+        width: 300px;
+        margin: 25px auto;
+      }
+    }
+  }
+}

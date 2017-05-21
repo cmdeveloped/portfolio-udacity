@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Collin's Udacity Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href='css/index.min.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1 id='logo' class='header left'>cmdeveloped</h1>
+    <h1 id='name' class='header right'>Collin Smith</h1>
+    <h3 class='header right'>Full-Stack Developer</h3>
+    <h4 class='header right'><em>Ordinary name, yet extraordinary individual.</em></h4>
+  </header>
+
+  <div class='main'>
+    <section class='main left'>
+      <content class='welcome'>
+        <img src='images/me.jpg' alt='Hello' />
+        <h1><strong><em>Welcome!</em></strong></h1>
+      </content>
+      <div class='content-wrapper'>
+        <h2 id="palette_head">Color Palette</h2>
+        <ul>
+          <li>
+            <figure id='primary'></figure>
+            <figcaption><strong>Primary</strong> - #37464f</figcaption>
+          </li>
+          <li>
+            <figure id='secondary'></figure>
+            <figcaption><strong>Secondary</strong> - #62717b</figcaption>
+          </li>
+          <li>
+            <figure id='accent'></figure>
+            <figcaption><strong>Accent</strong> - #ffe082</figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img id='slide1' src="images/slide-1.png" alt="Main 1">
+        </div>
+
+        <div class="item">
+          <img src="images/slide-2.jpg" alt="Main 2">
+        </div>
+
+        <div class="item">
+          <img src="images/slide-3.jpeg" alt="Main 3">
+        </div>
+      </div>
+    </div>
+
+    <div class='main'>
+      <main class='portfolio'>
+        <h1><strong>Featured Work</strong></h1>
+        <ul>
+          <li>
+            <a href='https://mylifts.pagefrontapp.com' target="_blank"><img src='images/mylift.png' alt='mylift fitness application'/></a>
+            <h1>MyLift</h1>
+            <p>Free Fitness Programming Ember Application</p>
+            <h5>Ember</h5>
+          </li>
+          <li>
+            <a href='https://github.com/cmdeveloped/movies_project_udacity' target="_blank"><img src='images/movies.png' alt='movie trailer udacity' /></a>
+            <h1>Movie Trailer</h1>
+            <p>Udacity Movie Trailer Project</p>
+            <h5>Python</h5>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </div>
+
+    <footer>
+      <p><strong>Copyright (c) 2017 Copyright Holder All Rights Reserved.</strong></p>
+    </footer>
+</body>
+
+</html>
